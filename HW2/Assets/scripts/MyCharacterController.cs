@@ -97,21 +97,21 @@ public class MyCharacterController : MonoBehaviour {
 			moveDirection += playerTransform.right.normalized * Time.deltaTime * moveSpeed;
 		}
 
-		//looking up and down with R/F
-		if(Input.GetKey(KeyCode.R)){
-			cameraTransform.Rotate(new Vector3(-90,0,0) * Time.deltaTime);
-		} else if (Input.GetKey(KeyCode.F)){
-			cameraTransform.Rotate(new Vector3(90,0,0) * Time.deltaTime);
-		}
+//		//looking up and down with R/F
+//		if(Input.GetKey(KeyCode.R)){
+//			cameraTransform.Rotate(new Vector3(-90,0,0) * Time.deltaTime);
+//		} else if (Input.GetKey(KeyCode.F)){
+//			cameraTransform.Rotate(new Vector3(90,0,0) * Time.deltaTime);
+//		}
 
 		//looking and turning with mouse
 		playerTransform.Rotate(new Vector3(0,90,0) * Time.deltaTime * Input.GetAxis("Mouse X"));
-		// set max and min for rotation of camera
-		float cameraRotationX = cameraTransform.rotation.eulerAngles.x;
-		if((!(cameraRotationX < 180f && cameraRotationX > 50f && Input.GetAxis("Mouse Y") < 0) && 
-		    !(cameraRotationX > 180f && cameraRotationX < 310f && Input.GetAxis("Mouse Y") > 0))){
-			cameraTransform.Rotate(new Vector3(-90,0,0) * Time.deltaTime * Input.GetAxis("Mouse Y"));
-		}
+//		// set max and min for rotation of camera
+//		float cameraRotationX = cameraTransform.rotation.eulerAngles.x;
+//		if((!(cameraRotationX < 180f && cameraRotationX > 50f && Input.GetAxis("Mouse Y") < 0) && 
+//		    !(cameraRotationX > 180f && cameraRotationX < 310f && Input.GetAxis("Mouse Y") > 0))){
+//			cameraTransform.Rotate(new Vector3(-90,0,0) * Time.deltaTime * Input.GetAxis("Mouse Y"));
+//		}
 
 
 		playerController.Move(moveDirection);
