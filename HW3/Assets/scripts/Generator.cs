@@ -17,16 +17,16 @@ public class Generator : MonoBehaviour {
 				//TODO: randomize facing direction
 
 				if(randomNum < 25f){
-					Instantiate(model1, new Vector3(x*spread, 0f, y*spread), Quaternion.identity);
+					Instantiate(model1, new Vector3(x*spread, 0f, y*spread), Quaternion.Euler(new Vector3(0f, 90f * Random.Range(0,4), 0f)));
 				} else if (randomNum < 50f){
-					Instantiate(model2, new Vector3(x*spread, 0f, y*spread), Quaternion.identity);
+					Instantiate(model2, new Vector3(x*spread, 0f, y*spread), Quaternion.Euler(new Vector3(0f, 90f * Random.Range(0,4), 0f)));
 				} else if (randomNum < 70f){
-					Instantiate(model3, new Vector3(x*spread, 0f, y*spread), Quaternion.identity);
+					Instantiate(model3, new Vector3(x*spread, 0f, y*spread), Quaternion.Euler(new Vector3(0f, 90f * Random.Range(0,4), 0f)));
 				} else if (randomNum < 90f){
-					Instantiate(model4, new Vector3(x*spread, 0f, y*spread), Quaternion.identity);
+					Instantiate(model4, new Vector3(x*spread, 0f, y*spread), Quaternion.Euler(new Vector3(0f, 90f * Random.Range(0,4), 0f)));
 				} else{
 					hoopCounter++;
-					Instantiate(model5, new Vector3(x*spread, 0f, y*spread), Quaternion.identity);
+					Instantiate(model5, new Vector3(x*spread, 0f, y*spread), Quaternion.Euler(new Vector3(0f, 90f * Random.Range(0,4), 0f)));
 				}
 			}
 		}
