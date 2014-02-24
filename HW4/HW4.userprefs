@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../HW4/Assets/Scripts/buttonHit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/buttonHit.cs">
     <Files>
-      <File FileName="../HW4/Assets/Scripts/reset.cs" Line="15" Column="4" />
-      <File FileName="../HW4/Assets/Scripts/buttonHit.cs" Line="25" Column="43" />
+      <File FileName="Assets/Scripts/reset.cs" Line="15" Column="4" />
+      <File FileName="Assets/Scripts/buttonHit.cs" Line="25" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
